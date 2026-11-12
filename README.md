@@ -19,4 +19,17 @@ git clone [https://github.com/nbiyevn5-cmd/ph-tabular-rl1.git](https://github.co
 cd ph-tabular-rl1
 pip install numpy matplotlib
 python ph_qlearning.py 40000
-# ph-tabular-rl1
+# ph-tabular-rl1## Deneysel Sonuçlar ve Grafikler
+
+### 1. Sistem Dinamiği: Titrasyon Eğrisi
+pH 7.0 civarındaki keskin eğim, sistemin yüksek derecede doğrusal olmayan (non-linear) yapısını göstermektedir.
+![Titrasyon Eğrisi](1000290367.png)
+
+### 2. Eğitim Performansı (40.000 Episode)
+Ajanın keşif ve öğrenme süreci boyunca toplam ödül artışı ve hedef deşarj bandında (pH 6.8 - 7.2) kalma oranı.
+![Eğitim Grafikleri](1000290372.png)
+
+### 3. Kontrolcü Karşılaştırması (Q-Learning vs. PI vs. Aç-Kapa)
+Aynı bozucu giriş senaryoları altında farklı kontrol algoritmalarının zaman serisi tepkileri ve performans metrikleri.
+![Zaman Serisi Karşılaştırması](1000290373.png)
+![Performans Metrikleri](1000290374.png)
